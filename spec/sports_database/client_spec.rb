@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe SDB::Client do
+describe SportsDatabase do
   it 'has a version number' do
-    expect(SDB::Client::VERSION).not_to be nil
+    expect(SportsDatabase::VERSION).not_to be nil
   end
 
   it 'does something useful' do

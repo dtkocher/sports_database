@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sdb/client/version'
+require 'sports_database/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "sdb-client"
-  spec.version       = SDB::Client::VERSION
+  spec.name          = "sports_database"
+  spec.version       = SportsDatabase::VERSION
   spec.authors       = ["dtkocher"]
   spec.email         = ["dtkocher@gmail.com"]
 

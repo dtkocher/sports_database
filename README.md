@@ -1,4 +1,4 @@
-# SdbApiClient
+# SportsDatabase
 
 A ruby client to help with interacting to http://www.sportsdatabase.com/api. Currently tested and working on Ruby 2.2.1.
 
