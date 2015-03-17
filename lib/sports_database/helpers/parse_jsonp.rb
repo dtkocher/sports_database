@@ -6,7 +6,6 @@ module SportsDatabase
     class ParseJsonp < FaradayMiddleware::ParseJson
 
       define_parser do |body|
-        puts body
         unless body.strip.empty? || body[/{.+}/].nil?
           JSON.parse body[/{.+}/].gsub("'", "\"")
         end
