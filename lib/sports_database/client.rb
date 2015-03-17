@@ -7,7 +7,7 @@ module SportsDatabase
 
     def initialize(opts={})
       self.api_key = opts.fetch(:api_key, "guest")
-      self.api_key = opts.fetch(:sport, "ncaabb")
+      self.sport = opts.fetch(:sport, "ncaabb")
     end
 
   end
