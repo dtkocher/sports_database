@@ -6,9 +6,9 @@ module SportsDatabase
   module Helpers
     module Connection
 
-      private
+      attr_reader :result
 
-      attr_reader :response
+      private
 
       def connection
         @connection ||=
@@ -20,23 +20,13 @@ module SportsDatabase
       end
 
       def get(query)
-        @response = connection.get do |request|
+        response = connection.get do |request|
           request.params[:sdql] = query
           request.params[:output] = "json"
           request.params[:api_key] = api_key
         end
-      end
 
-      def status
-        response.status
-      end
-
-      def success?
-        response.success?
-      end
-
-      def fail?
-        !success?
+        @result = Result.new response
       end
     end
   end
