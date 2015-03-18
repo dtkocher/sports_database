@@ -31,7 +31,10 @@ require 'sports_database'
 
 # By default if no params are passed api_key will be set to quest and sport to ncaabb
 client = SportsDatabase::Client.new({ api_key: "guest", sport: "ncaabb" })
-client.query("full name,school name,team@season=2014 and team=PURD")
+
+# the following will perform the same query
+client.query("full name, school name, team @ season=2014 and team=PURD")
+client.query("full name, school name, team", "season=2014 and team=PURD")
 ```
 
 ## Contributing
