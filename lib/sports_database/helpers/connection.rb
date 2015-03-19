@@ -1,7 +1,3 @@
-require 'faraday_middleware'
-require 'typhoeus/adapters/faraday'
-require 'typhoeus'
-
 module SportsDatabase
   module Helpers
     module Connection

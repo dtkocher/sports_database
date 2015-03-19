@@ -1,6 +1,3 @@
-require 'faraday_middleware/response_middleware'
-require 'json'
-
 module SportsDatabase
   module Helpers
     class ParseJsonp < FaradayMiddleware::ParseJson
