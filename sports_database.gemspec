@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{A ruby client to help with interacting to http://www.sportsdatabase.com/api.}
   spec.description   = %q{A ruby client to help with interacting to http://www.sportsdatabase.com/api.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/dtkocher/sports_database"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
